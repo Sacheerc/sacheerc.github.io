@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.css';
 import './styles/Custom.css';
+import NavBar from './components/NavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout, Space, ConfigProvider } from 'antd';
 import { useState } from 'react';
-import NavBar from './components/NavBar';
-import { MainSlider } from './components/MainSlider';
-import { Skills } from './components/Skills';
-import { Bio } from './components/Bio';
-import { Experience } from './components/Experience';
-import { Education } from './components/Education';
-import { Portfolio } from './components/Portfolio';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
 
 const { Header, Footer, Content } = Layout;
 
@@ -42,14 +39,12 @@ const App = () => {
             <NavBar></NavBar>
           </Header>
           <Content>
-            <>
-              <MainSlider />
-              <Bio />
-              <Skills />
-              <Experience />
-              <Education />
-              <Portfolio />
-            </>
+            <Routes>
+              <>
+                <Route exact path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+              </>
+            </Routes>
           </Content>
           <Footer>Footer</Footer>
         </Layout>
