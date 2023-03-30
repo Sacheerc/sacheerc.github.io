@@ -3,13 +3,29 @@ import mainDp from '../assets/mainDp.png';
 import CustomButton from './CustomButton';
 import SvgIconButton from './SvgIconButton';
 
-export const IntroSection = ({ theme }) => {
-  const title = {
-    fontSize: '80px',
-    fontWeight: '600',
-    lineHeight: '90px',
-  };
+const title = {
+  fontSize: '80px',
+  fontWeight: '600',
+  lineHeight: '90px',
+};
 
+const imageWrapper = {
+  position: 'relative',
+  minHeight: '611px',
+  margin: 'auto',
+};
+
+const image = {
+  position: 'absolute',
+  top: '0px',
+  left: '0px',
+};
+
+const iconSet = {
+  marginTop: 40,
+};
+
+export const IntroSection = ({ theme }) => {
   const titlePrimary = {
     ...title,
     color: theme.primaryColor,
@@ -30,22 +46,6 @@ export const IntroSection = ({ theme }) => {
     fontWeight: '400',
     marginTop: 20,
     color: theme.darkColor,
-  };
-
-  const imageWrapper = {
-    position: 'relative',
-    minHeight: '611px',
-    margin: 'auto',
-  };
-
-  const image = {
-    position: 'absolute',
-    top: '0px',
-    left: '0px',
-  };
-
-  const iconSet = {
-    marginTop: 40,
   };
 
   return (

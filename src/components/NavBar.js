@@ -42,7 +42,7 @@ export const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div style={{ minHeight: 100 }}></div>
+      <div style={{ minHeight: 170 }}></div>
     </>
   );
 };
