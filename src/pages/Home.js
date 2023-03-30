@@ -1,20 +1,12 @@
 import React from 'react';
-import { MainSlider } from '../components/MainSlider';
-import { Bio } from '../components/Bio';
-import { Skills } from '../components/Skills';
-import { Experience } from '../components/Experience';
-import { Education } from '../components/Education';
-import { Portfolio } from '../components/Portfolio';
+import { ThemeContext } from '../contexts/ThemeContext';
+import { IntroSection } from '../components/IntroSection';
 
 export const Home = () => {
+  const { theme } = React.useContext(ThemeContext);
   return (
     <>
-      <MainSlider />
-      <Bio />
-      <Skills />
-      <Experience />
-      <Education />
-      <Portfolio />
+      <IntroSection theme={theme} />
     </>
   );
 };

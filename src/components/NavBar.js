@@ -1,41 +1,48 @@
 import React from 'react';
-import { Menu } from 'antd';
-import { Link } from 'react-router-dom';
-import { HomeTwoTone, ContactsTwoTone } from '@ant-design/icons';
-import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-// Menu items array
-const items = [
-  {
-    label: 'Home',
-    key: 'home',
-    icon: <HomeTwoTone />,
-    route: '/',
-  },
-  {
-    label: 'Contact',
-    key: 'contact',
-    icon: <ContactsTwoTone />,
-    route: '/about',
-  },
+const navElements = [
+  { label: 'Home', link: '/' },
+  { label: 'Projects', link: '/project' },
 ];
 
-const NavBar = () => {
-  // const [current, setCurrent] = useState('home');
-
-  // const handleMenuClick = (e) => {
-  //   setCurrent(e.key);
-  // };
+export const NavBar = () => {
+  const location = useLocation();
 
   return (
-    <Menu theme='dark' mode='horizontal'>
-      {items.map((item) => (
-        <Menu.Item key={item.key} icon={item.icon}>
-          <Link to={item.route}>{item.label}</Link>
-        </Menu.Item>
-      ))}
-    </Menu>
+    <>
+      <nav class='navbar navbar-expand-sm fixed-top navbar-light'>
+        <div class='container'>
+          <a class='navbar-brand' href='/'>
+            SACHINTHA
+          </a>
+          <button
+            class='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbar1'
+          >
+            <span class='navbar-toggler-icon'></span>
+          </button>
+          <div class='collapse navbar-collapse' id='navbar1'>
+            <ul className='navbar-nav ms-auto'>
+              {navElements.map((element, index) => (
+                <li
+                  key={index}
+                  className={`nav-item ${
+                    location.pathname === element.link ? 'active' : ''
+                  }`}
+                >
+                  <Link className='nav-link' to={element.link}>
+                    {element.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style={{ minHeight: 100 }}></div>
+    </>
   );
 };
-
-export default NavBar;
