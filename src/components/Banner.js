@@ -2,18 +2,14 @@ import React from 'react';
 import CustomText from './CustomText';
 
 export const Banner = ({ theme }) => {
-  const banner = {
+  const bannerStyle = {
     backgroundColor: theme.primaryColor,
-    minHeight: 154,
-    marginBottom: 30,
-    marginTop: 70,
-    borderRadius: 20,
   };
 
   return (
     <div
-      className='row text-center d-flex align-items-center mx-auto'
-      style={banner}
+      className='row text-center d-flex align-items-center mx-auto banner'
+      style={bannerStyle}
     >
       <div className='col-4'>
         <div>

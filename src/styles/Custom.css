@@ -37,3 +37,23 @@ p {
   font-weight: 700;
   margin-bottom: 30px;
 }
+
+.banner {
+  min-height: 154px;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+.section {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 8px;
+}
+
+@media (max-width: 767px) {
+  /* styles for devices with a maximum width of 767px (e.g. mobile devices) */
+}

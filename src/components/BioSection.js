@@ -2,11 +2,6 @@ import React from 'react';
 import person from '../assets/person.png';
 import CustomButton from './CustomButton';
 
-const bioSection = {
-  marginTop: 70,
-  marginBottom: 30,
-};
-
 export const BioSection = ({ theme }) => {
   const bioContent = {
     fontSize: 22,
@@ -34,7 +29,7 @@ export const BioSection = ({ theme }) => {
   };
 
   return (
-    <div style={bioSection}>
+    <div className='section'>
       <div
         className='text-center sub-heading'
         style={{ color: theme.darkerColor }}
