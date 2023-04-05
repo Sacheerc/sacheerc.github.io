@@ -1,13 +1,21 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 
 const navElements = [
-  { label: 'Home', link: '/' },
-  { label: 'Projects', link: '/project' },
+  { label: 'Home', link: 'intro-section' },
+  { label: 'About', link: 'bio-section' },
+  { label: 'Skills', link: 'skills-section' },
+  { label: 'Qualifications', link: 'qualifications-section' },
+  { label: 'Projects', link: 'projects-section' },
+  { label: 'Contact', link: 'contact-section' },
 ];
 
 export const NavBar = () => {
-  const location = useLocation();
+  const [activeLink, setActiveLink] = useState([navElements[0].link]);
+
+  useEffect(() => {
+    setActiveLink(navElements[0].link);
+  }, []);
 
   return (
     <>
@@ -30,10 +38,16 @@ export const NavBar = () => {
                 <li
                   key={index}
                   className={`nav-item ${
-                    location.pathname === element.link ? 'active' : ''
+                    activeLink === element.link ? 'active' : ''
                   }`}
                 >
-                  <Link className='nav-link' to={element.link}>
+                  <Link
+                    style={{ cursor: 'pointer' }}
+                    className='nav-link'
+                    offset={-150}
+                    to={element.link}
+                    onClick={() => setActiveLink(element.link)}
+                  >
                     {element.label}
                   </Link>
                 </li>

@@ -49,7 +49,7 @@ export const IntroSection = ({ theme }) => {
   };
 
   return (
-    <div className='row'>
+    <div id='intro-section' className='row'>
       <div className='col-md-6 d-flex align-items-center'>
         <div className='ms-auto'>
           <div style={topText}>HELLO!</div>

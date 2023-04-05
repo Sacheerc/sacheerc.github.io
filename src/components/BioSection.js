@@ -29,7 +29,7 @@ export const BioSection = ({ theme }) => {
   };
 
   return (
-    <div className='section'>
+    <div id='bio-section' className='section'>
       <div
         className='text-center sub-heading'
         style={{ color: theme.darkerColor }}

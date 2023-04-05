@@ -50,7 +50,7 @@ export const Experience = ({ theme }) => {
   };
 
   return (
-    <div className='section'>
+    <div id='qualifications-section' className='section'>
       <div
         className='text-center sub-heading'
         style={{ color: theme.darkerColor }}

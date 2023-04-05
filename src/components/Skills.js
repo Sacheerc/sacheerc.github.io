@@ -58,7 +58,7 @@ export const Skills = ({ theme }) => {
   };
 
   return (
-    <div className='section'>
+    <div id='skills-section' className='section'>
       <div
         className='text-center sub-heading'
         style={{ color: theme.darkerColor }}

@@ -11,8 +11,8 @@ export const Home = () => {
   const { theme } = React.useContext(ThemeContext);
   return (
     <>
-      <IntroSection id='intro-section' theme={theme} />
-      <BioSection id='about-section' theme={theme} />
+      <IntroSection theme={theme} />
+      <BioSection theme={theme} />
       <Banner theme={theme} />
       <Skills theme={theme} />
       <Experience theme={theme} />
