@@ -20,7 +20,7 @@ export const IntroSection = ({ theme }) => {
     fontSize: theme.isMobile ? '25px' : '32px',
     color: theme.primaryColor,
   };
-  console.log(theme.isMobile);
+
   const subTitle = {
     fontSize: theme.isMobile ? '25px' : '35px',
     fontWeight: '400',
