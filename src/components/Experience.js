@@ -107,7 +107,7 @@ export const Experience = ({ theme }) => {
             <div
               key={index}
               className={
-                index % 2 === 1
+                index % 2 === 1 || theme.isMobile
                   ? 'experience-item item-right'
                   : 'experience-item item-left'
               }
@@ -118,7 +118,7 @@ export const Experience = ({ theme }) => {
                 <div>
                   <CustomText
                     fontWeight={500}
-                    fontSize={22}
+                    fontSize={theme.isMobile ? 16 : 22}
                     color={theme.primaryColor}
                   >
                     {element.title}
@@ -127,7 +127,7 @@ export const Experience = ({ theme }) => {
                 <div>
                   <CustomText
                     fontWeight={500}
-                    fontSize={20}
+                    fontSize={theme.isMobile ? 12 : 22}
                     color={theme.darkerColor}
                   >
                     {element.place}
@@ -136,7 +136,7 @@ export const Experience = ({ theme }) => {
                 <div className='label' style={backgroundColor}>
                   <CustomText
                     fontWeight={500}
-                    fontSize={16}
+                    fontSize={theme.isMobile ? 12 : 22}
                     marginLeft={8}
                     marginRight={8}
                     color={theme.lighterColor}
