@@ -26,6 +26,12 @@
   height: 56px;
 }
 
+.title {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 90px;
+}
+
 p {
   font-family: 300;
   font-size: 20px;
@@ -118,6 +124,64 @@ p {
   border-radius: 5px;
 }
 
+.image-wrapper {
+  position: relative;
+  min-height: 611px;
+  margin: 'auto';
+}
+
+.image-wrapper .image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 561px;
+}
+
+.image-dp {
+  position: absolute;
+  width: 403px;
+  z-index: 100;
+  top: 45px;
+  left: 40px;
+}
+
 @media (max-width: 767px) {
   /* styles for devices with a maximum width of 767px (e.g. mobile devices) */
+  .image-wrapper {
+    position: relative;
+    margin: 'auto';
+    min-height: 400px;
+  }
+
+  .image-wrapper .image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+  }
+
+  .image-dp {
+    position: absolute;
+    width: 70%;
+    z-index: 100;
+    top: 45px;
+    left: 40px;
+  }
+
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .banner {
+    min-height: 110px;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
 }

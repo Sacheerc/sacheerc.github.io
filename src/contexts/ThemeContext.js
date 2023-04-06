@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 
 export const ThemeContext = React.createContext();
 
@@ -10,6 +11,7 @@ export const ThemeProvider = ({ children }) => {
     darkerColor: '#2D2D44',
     lightColor: '#AAADB2',
     lighterColor: '#FFFFFF',
+    isMobile: window.innerWidth < 768,
   });
 
   return (

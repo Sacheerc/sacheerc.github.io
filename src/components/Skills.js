@@ -54,7 +54,7 @@ export const Skills = ({ theme }) => {
 
   const progressItem = {
     marginBottom: 30,
-    width: '90%',
+    width: theme.isMobile ? '100%' : '90%',
   };
 
   return (
@@ -121,7 +121,13 @@ export const Skills = ({ theme }) => {
           </div>
           <div>
             {technical.map((element, index) => (
-              <div key={index} style={{ ...progressItem, marginLeft: '10%' }}>
+              <div
+                key={index}
+                style={{
+                  ...progressItem,
+                  marginLeft: theme.isMobile ? 0 : '10%',
+                }}
+              >
                 <div className='row'>
                   <div className='col-6'>
                     <CustomText
