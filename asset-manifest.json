@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.7ea6eae2.css",
-    "main.js": "/static/js/main.75b3ed48.js",
+    "main.js": "/static/js/main.3eef6015.js",
     "static/js/787.a58b0daa.chunk.js": "/static/js/787.a58b0daa.chunk.js",
     "static/media/background-removed_1.png": "/static/media/background-removed_1.838170f1e7e2539569cd.png",
     "static/media/custom_html_landing_page_2.jpg": "/static/media/custom_html_landing_page_2.7b65b9d5b0cd4309d525.jpg",
     "static/media/cover_4.jpg": "/static/media/cover_4.12ba61fe9f004fd7c6e1.jpg",
     "static/media/portfolio_website_2.jpg": "/static/media/portfolio_website_2.86e9c7c940cde2058629.jpg",
+    "static/media/sachintha_rathnayake_resume.pdf": "/static/media/sachintha_rathnayake_resume.228ce8b8670421626b48.pdf",
     "static/media/portfolio_website_1.jpg": "/static/media/portfolio_website_1.ca7a412b9ac9ae45daae.jpg",
     "static/media/portfolio_dp_2.jpg": "/static/media/portfolio_dp_2.7e560f6be73e16570f36.jpg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -14,11 +15,11 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.7ea6eae2.css.map": "/static/css/main.7ea6eae2.css.map",
-    "main.75b3ed48.js.map": "/static/js/main.75b3ed48.js.map",
+    "main.3eef6015.js.map": "/static/js/main.3eef6015.js.map",
     "787.a58b0daa.chunk.js.map": "/static/js/787.a58b0daa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ea6eae2.css",
-    "static/js/main.75b3ed48.js"
+    "static/js/main.3eef6015.js"
   ]
 }
